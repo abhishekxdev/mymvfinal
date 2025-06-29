@@ -133,9 +133,13 @@ export default function Hero() {
           <span className="inline-block mb-4 px-4 py-1 rounded-full bg-transparent text-xs md:text-sm font-normal font-[Manrope] text-white tracking-wide border border-white/20 uppercase">
             15+ Projects Delivered
           </span>
-          <h1 className="text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-tight font-sans">
-          We Build MVPs that launch<br />
-             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Fast</span> and <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Scale</span> Faster
+          <h1 className="text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-tight font-sans leading-tight">
+            We Build MVPs that<br className="hidden sm:block" />
+            <span className="block sm:inline"> launch </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Fast</span>
+            <span className="block sm:inline"> and </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Scale</span>
+            <span className="block sm:inline"> Faster</span>
           </h1>
           <div className="flex items-center gap-4">
             <a
@@ -285,6 +289,3 @@ export const Twitter=()=>{
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
   )
 }
-
-
-
