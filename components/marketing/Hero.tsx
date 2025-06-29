@@ -134,12 +134,8 @@ export default function Hero() {
             15+ Projects Delivered
           </span>
           <h1 className="text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-tight font-sans leading-tight">
-            We Build MVPs that<br className="hidden sm:block" />
-            <span className="block sm:inline"> launch </span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Fast</span>
-            <span className="block sm:inline"> and </span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Scale</span>
-            <span className="block sm:inline"> Faster</span>
+            We Build MVPs that launch<br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Fast</span> and <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Scale</span> Faster
           </h1>
           <div className="flex items-center gap-4">
             <a
