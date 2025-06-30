@@ -12,7 +12,7 @@ export function Navbar() {
       <div className="max-w-4xl mx-auto px-4">
         <div className="bg-black/80 backdrop-blur-md border border-neutral-800 rounded-full px-4 md:px-6 flex items-center justify-between py-1.5 md:py-4">
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-8 h-8 md:w-12 md:h-12 relative">
+            <div className="w-10 h-10 md:w-12 md:h-12 relative">
               <Image
                 src="/logomvp.png"
                 alt="MVP Studio Logo"
