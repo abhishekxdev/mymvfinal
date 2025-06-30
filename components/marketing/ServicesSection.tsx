@@ -77,15 +77,15 @@ const ServiceCard = ({
   return (
     <button
       onClick={onClick}
-      className="bg-black hover:bg-neutral-900 transition-colors duration-300 rounded-lg p-8 flex flex-col justify-between h-52 border border-neutral-800 text-left cursor-pointer"
+      className="bg-black hover:bg-neutral-900 transition-colors duration-300 rounded-lg p-8 flex flex-col items-center justify-between h-52 border border-neutral-800 text-center cursor-pointer"
     >
-      <div>
-        <div className="scale-125 mb-4">
+      <div className="flex flex-col items-center">
+        <div className="scale-125 mb-4 flex justify-center">
           {icon}
         </div>
-        <h3 className="text-white font-medium text-xl mt-6">{title}</h3>
+        <h3 className="text-white font-medium text-xl mt-6 text-center">{title}</h3>
       </div>
-      <div className="flex items-center text-neutral-400 hover:text-white transition-colors duration-300 text-base">
+      <div className="flex items-center justify-center text-neutral-400 hover:text-white transition-colors duration-300 text-base">
         <span>View Work</span>
         <ChevronRight className="w-5 h-5 ml-2" />
       </div>
