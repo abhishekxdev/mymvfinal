@@ -2,6 +2,7 @@
 import { ArrowRight } from "lucide-react";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Particles from "@/components/ui/Particles";
 
 const projects = [
   
@@ -114,18 +115,25 @@ export default function Hero() {
   const currentProject = projects[currentProjectIndex]
 
   return (
-    <div className="min-h-[90vh] w-screen flex flex-col items-center justify-center  relative bg-black ">
-     
-      
+    <div className="min-h-[90vh] w-screen flex flex-col items-center justify-center relative bg-black overflow-hidden">
+      {/* Particle Background */}
+      <div className="absolute inset-0 w-full h-full">
+        <Particles
+          particleColors={['#ffffff', '#4f46e5', '#06b6d4']}
+          particleCount={150}
+          particleSpread={15}
+          speed={0.05}
+          particleBaseSize={80}
+          moveParticlesOnHover={true}
+          alphaParticles={true}
+          disableRotation={false}
+          sizeRandomness={0.8}
+          cameraDistance={25}
+        />
+      </div>
 
       {/* Overlay for better readability */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/40"></div>
-
-      {/* Grid Pattern Overlay */}
-      <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_2px),linear-gradient(to_bottom,#8080800a_1px,transparent_2px)] bg-[size:20px_24px]">
-        {/* Gradient Fade Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30  to-black"></div>
-      </div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto z-10 px-4 md:px-8 mt-48 md:mt-72">
@@ -173,12 +181,6 @@ export default function Hero() {
             </div>
         </div>
       </div>
-
-
-
-     
-
-
     </div>
   );
 }
