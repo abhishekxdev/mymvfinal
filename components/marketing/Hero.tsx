@@ -133,7 +133,7 @@ export default function Hero() {
           <span className="inline-block mb-4 px-4 py-1 rounded-full bg-transparent text-xs md:text-sm font-normal font-[Manrope] text-white tracking-wide border border-white/20 uppercase">
             15+ Projects Delivered
           </span>
-          <h1 className="text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-tight font-sans leading-tight">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-7xl lg:text-8xl tracking-tight font-sans leading-tight">
             We Build MVPs that launch<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Fast</span> and <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Scale</span> Faster
           </h1>
