@@ -18,7 +18,7 @@ const plans = [
     ],
     highlighted: false,
     cta: "Book a Call",
-    href: "https://calendly.com/vishnoiabhishek29/30min",
+    href: "https://cal.com/mvpstudio.in/30min",
   },
   {
     name: "MVP Growth Retainer Plan",
@@ -36,7 +36,7 @@ const plans = [
     ],
     highlighted: true,
     cta: "Book a Call",
-    href: "https://calendly.com/vishnoiabhishek29/30min",
+    href: "https://cal.com/mvpstudio.in/30min",
   },
 ];
 

@@ -48,7 +48,7 @@ export function Navbar() {
             )}
             
             <a
-              href="https://calendly.com/vishnoiabhishek29/30min"
+              href="https://cal.com/mvpstudio.in/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="px-2.5 py-1.5 md:px-5 md:py-2.5 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] inline-flex items-center"

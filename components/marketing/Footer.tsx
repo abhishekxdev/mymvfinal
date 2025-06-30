@@ -17,7 +17,7 @@ export function Footer({ showViewWork = true }: FooterProps) {
           </h2>
           
           <div className="flex flex-col sm:flex-row items-center gap-6">
-            <Link href="https://calendly.com/vishnoiabhishek29/30min" passHref>
+            <Link href="https://cal.com/mvpstudio.in/30min" passHref>
               <Button 
                 size="lg" 
                 className="bg-white text-black hover:bg-neutral-200 rounded-full text-lg font-normal px-8 py-4 h-auto"
@@ -45,4 +45,4 @@ export function Footer({ showViewWork = true }: FooterProps) {
       </div>
     </footer>
   )
-} 
+}

@@ -34,7 +34,7 @@ export default function About() {
                             <p className="text-white font-sans font-medium tracking-tight text-right text-sm md:text-base">~ Anubhav Dube</p>
                             <p className="text-white font-sans font-medium tracking-tight text-right text-sm ">Founding Engineer Norric AI</p>
                         </div>
-                        <Link href="https://cal.com/anubhav-dube-h6xzsc/quick-chat">
+                        <Link href="https://cal.com/mvpstudio.in/30min">
                             <Button variant="outline" className="hover:shadow-[0px_0px_50px_10px_rgba(59,_130,_246,_0.5)]  transition-all duration-300">
                                 Book a Call
                             </Button>
@@ -92,5 +92,3 @@ export default function About() {
         </div>
     );
 }
-
-
