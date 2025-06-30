@@ -115,33 +115,33 @@ export default function Hero() {
   const currentProject = projects[currentProjectIndex]
 
   return (
-    <div className="min-h-[90vh] w-screen flex flex-col items-center justify-center relative bg-black overflow-hidden">
-      {/* Particle Background */}
-      <div className="absolute inset-0 w-full h-full">
+    <div className="min-h-[90vh] w-screen flex flex-col items-center justify-center relative overflow-hidden">
+      {/* Particle Background - Behind everything */}
+      <div className="absolute inset-0 w-full h-full z-0">
         <Particles
           particleColors={['#ffffff', '#4f46e5', '#06b6d4']}
-          particleCount={150}
-          particleSpread={15}
-          speed={0.05}
-          particleBaseSize={80}
+          particleCount={200}
+          particleSpread={20}
+          speed={0.08}
+          particleBaseSize={120}
           moveParticlesOnHover={true}
           alphaParticles={true}
           disableRotation={false}
-          sizeRandomness={0.8}
-          cameraDistance={25}
+          sizeRandomness={1.2}
+          cameraDistance={30}
         />
       </div>
 
-      {/* Overlay for better readability */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
+      {/* Subtle dark overlay for text readability - but not too dark */}
+      <div className="absolute inset-0 bg-black/30 z-10"></div>
 
-      {/* Main Content */}
-      <div className="max-w-6xl mx-auto z-10 px-4 md:px-8 mt-48 md:mt-72">
+      {/* Main Content - Above particles and overlay */}
+      <div className="max-w-6xl mx-auto z-20 px-4 md:px-8 mt-48 md:mt-72 relative">
         <div className="flex flex-col items-center justify-center gap-12 text-center motion-translate-y-in-100 motion-duration-[1s] motion-ease-spring-smooth">
-          <span className="inline-block mb-4 px-4 py-1 rounded-full bg-transparent text-xs md:text-sm font-normal font-[Manrope] text-white tracking-wide border border-white/20 uppercase">
+          <span className="inline-block mb-4 px-4 py-1 rounded-full bg-black/20 backdrop-blur-sm text-xs md:text-sm font-normal font-[Manrope] text-white tracking-wide border border-white/20 uppercase">
             15+ Projects Delivered
           </span>
-          <h1 className="text-white text-3xl sm:text-4xl md:text-7xl lg:text-8xl tracking-tight font-sans leading-tight">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-7xl lg:text-8xl tracking-tight font-sans leading-tight drop-shadow-lg">
             We Build MVPs that launch<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Fast</span> and <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Scale</span> Faster
           </h1>
@@ -158,7 +158,7 @@ export default function Hero() {
             </a>
             <a
                 href="/work"
-                className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] inline-flex items-center"
+                className="px-6 py-3 rounded-full border border-white/10 bg-black/40 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:bg-black/60 active:scale-[0.98] inline-flex items-center"
               >
                 <span className="text-center font-helvetica font-normal text-base md:text-lg tracking-[-0.02em] text-white">
                   View Work
@@ -203,7 +203,7 @@ interface Project {
 function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="group relative">
-      <div className="relative aspect-[16/9] overflow-hidden rounded-xl bg-black">
+      <div className="relative aspect-[16/9] overflow-hidden rounded-xl bg-black/20 backdrop-blur-sm border border-white/10">
         {isVideoSource(project.source) ? (
           <video
             src={project.source}
@@ -244,7 +244,7 @@ function ProjectCard({ project }: { project: Project }) {
 function ProjectCardMobile({ project }: { project: Project }) {
   return (
     <div className="group relative">
-      <div className="relative aspect-video overflow-hidden rounded-xl bg-black">
+      <div className="relative aspect-video overflow-hidden rounded-xl bg-black/20 backdrop-blur-sm border border-white/10">
         {isVideoSource(project.source) ? (
           <video
             src={project.source}
