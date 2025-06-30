@@ -120,15 +120,15 @@ export default function Hero() {
       <div className="absolute inset-0 w-full h-full z-0">
         <Particles
           particleColors={['#ffffff', '#4f46e5', '#06b6d4']}
-          particleCount={200}
-          particleSpread={20}
-          speed={0.08}
-          particleBaseSize={120}
+          particleCount={150}
+          particleSpread={25}
+          speed={0.06}
+          particleBaseSize={300}
           moveParticlesOnHover={true}
           alphaParticles={true}
           disableRotation={false}
-          sizeRandomness={1.2}
-          cameraDistance={30}
+          sizeRandomness={2.5}
+          cameraDistance={25}
         />
       </div>
 
