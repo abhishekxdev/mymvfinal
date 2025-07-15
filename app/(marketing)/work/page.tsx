@@ -27,7 +27,7 @@ const projects = [
 
 function WorkPageContent() {
   return (
-    <div className="bg-black text-white min-h-screen py-20 md:py-24 pt-32 md:pt-40">
+    <div className="text-white min-h-screen py-20 md:py-24 pt-32 md:pt-40">
       <div className="max-w-2xl mx-auto px-4 md:px-8 text-center">
         <h1 className="text-4xl md:text-6xl font-normal tracking-tighter text-white">
           Let My{" "}
