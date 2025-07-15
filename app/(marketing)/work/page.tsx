@@ -1,12 +1,9 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 import Image from "next/image";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Footer } from "@/components/marketing/Footer";
 
-// Optional but still safe to keep
 export const dynamic = "force-dynamic";
 
 const projects = [
@@ -28,23 +25,7 @@ const projects = [
   { src: "/brands/vorkellogo.png", alt: "Vorkel Logo", category: "Branding" },
 ];
 
-const categories = ["All", "Website", "Mobile App", "Product Design", "Branding"];
-
 function WorkPageContent() {
-  const searchParams = useSearchParams();
-  const [activeTab, setActiveTab] = useState("All");
-
-  useEffect(() => {
-    const categoryParam = searchParams.get("category");
-    if (categoryParam && categories.includes(categoryParam)) {
-      setActiveTab(categoryParam);
-    }
-  }, [searchParams]);
-
-  const filteredProjects = activeTab === "All"
-    ? projects
-    : projects.filter((p) => p.category === activeTab);
-
   return (
     <div className="bg-black text-white min-h-screen py-20 md:py-24 pt-32 md:pt-40">
       <div className="max-w-2xl mx-auto px-4 md:px-8 text-center">
@@ -55,45 +36,23 @@ function WorkPageContent() {
           </span>
         </h1>
       </div>
-
       <div className="max-w-7xl mx-auto mt-12 px-4 md:px-8">
-        <Tabs value={activeTab} onValueChange={setActiveTab}>
-          <div className="flex justify-center items-center">
-            <div className="flex justify-center w-full max-w-lg md:max-w-2xl overflow-x-auto">
-              <TabsList className="bg-transparent border border-neutral-800 rounded-full p-1.5 w-max">
-                {categories.map((category) => (
-                  <TabsTrigger
-                    key={category}
-                    value={category}
-                    className="data-[state=active]:bg-white data-[state=active]:text-black text-neutral-400 rounded-full px-3 md:px-4 py-1.5 text-xs md:text-sm font-medium transition-colors whitespace-nowrap"
-                  >
-                    {category}
-                  </TabsTrigger>
-                ))}
-              </TabsList>
+        <div className="grid grid-cols-1 gap-8 md:max-w-4xl mx-auto">
+          {projects.map((project, index) => (
+            <div key={index} className="rounded-lg overflow-hidden border border-neutral-800">
+              <div className="relative w-full aspect-video bg-black">
+                <Image
+                  src={project.src}
+                  alt={project.alt}
+                  layout="fill"
+                  objectFit="contain"
+                  className="transition-transform duration-300 hover:scale-105"
+                />
+              </div>
             </div>
-          </div>
-
-          <TabsContent value={activeTab} className="mt-8">
-            <div className="grid grid-cols-1 gap-8 md:max-w-4xl mx-auto">
-              {filteredProjects.map((project, index) => (
-                <div key={index} className="rounded-lg overflow-hidden border border-neutral-800">
-                  <div className="relative w-full aspect-video bg-black">
-                    <Image
-                      src={project.src}
-                      alt={project.alt}
-                      layout="fill"
-                      objectFit="contain"
-                      className="transition-transform duration-300 hover:scale-105"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </TabsContent>
-        </Tabs>
+          ))}
+        </div>
       </div>
-
       <Footer showViewWork={false} />
     </div>
   );

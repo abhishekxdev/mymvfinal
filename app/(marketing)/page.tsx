@@ -8,7 +8,7 @@ import { Footer } from "@/components/marketing/Footer";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden bg-black">
+    <div className="overflow-hidden">
       <Hero />
       <WhyUsSection />
       <ServicesSection />
