@@ -1,13 +1,11 @@
 "use client"
 
-import { useState } from 'react'
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import Image from "next/image"
 
 const faqs = [
   {

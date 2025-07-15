@@ -1,10 +1,7 @@
 "use client"
 
-import { motion } from 'framer-motion'
-import { ArrowUpRight, Code, Layout, SmartphoneNfc, Palette } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { Code, Layout, SmartphoneNfc, Palette } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
-import Image from 'next/image'
 
 export function ServicesSection() {
   return (
