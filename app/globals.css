@@ -6,6 +6,29 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Mobile background - must come first */
+@media (max-width: 767px) {
+  html {
+    background-image: url('/mobi.jpeg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    min-height: 100vh;
+    background-color: #000;
+  }
+  
+  body {
+    background-image: url('/mobi.jpeg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    min-height: 100vh;
+    background-color: #000;
+  }
+}
+
 /* Desktop background */
 @media (min-width: 768px) {
   body {
@@ -17,28 +40,6 @@ body {
   }
 }
 
-/* Mobile background - without fixed attachment */
-@media (max-width: 767px) {
-  body {
-    background-image: url('/bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    min-height: 100vh;
-    background-color: #000;
-  }
-  
-  html {
-    background-image: url('/mobi.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    min-height: 100vh;
-    background-color: #000;
-  }
-}
 
 @layer base {
   :root {
