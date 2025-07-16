@@ -28,7 +28,7 @@ export function WhyUsSection() {
   ];
 
   return (
-    <section className="w-full py-8 md:py-16 relative mt-8 md:mt-20" id="why-us">
+    <section className="w-full py-8 md:py-16 relative mt-4 md:mt-8" id="why-us">
       <div className="max-w-4xl mx-auto z-10 px-4 md:px-8">
         <div className="flex flex-col items-center gap-3 md:gap-4 mb-8 md:mb-12">
           <div className="flex flex-col items-center gap-2 text-center w-full">
