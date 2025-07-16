@@ -36,7 +36,7 @@ export default function Hero() {
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-start relative overflow-hidden px-4 pt-20 md:pt-32">
       {/* Subtle dark overlay for text readability - but not too dark */}
-      <div className="absolute inset-0 bg-black/30 z-10"></div>
+      <div className="absolute inset-0 bg-black/20 md:bg-black/30 z-10"></div>
       {/* Main Content - Above overlay */}
       <div className="max-w-6xl mx-auto z-20 w-full mt-8 md:mt-16 relative">
         <div className="flex flex-col items-center justify-center gap-6 md:gap-12 text-center motion-translate-y-in-100 motion-duration-[1s] motion-ease-spring-smooth">

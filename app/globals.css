@@ -26,6 +26,17 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
     min-height: 100vh;
+    background-color: #000;
+  }
+  
+  html {
+    background-image: url('/mobi.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 100vh;
+    background-color: #000;
   }
 }
 
