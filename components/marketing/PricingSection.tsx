@@ -1,3 +1,42 @@
+"use client"
+
+import { Check } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+const plans = [
+  {
+    name: "Starter",
+    price: "997",
+    description: "Perfect for small businesses and startups looking to establish their online presence.",
+    features: [
+      "Custom website design",
+      "Mobile responsive",
+      "Basic SEO optimization",
+      "Contact form integration",
+      "1 month support"
+    ],
+    cta: "Get Started",
+    href: "mailto:hello@example.com",
+    highlighted: false
+  },
+  {
+    name: "Professional",
+    price: "1,997",
+    description: "Ideal for growing businesses that need advanced features and ongoing support.",
+    features: [
+      "Everything in Starter",
+      "Advanced SEO optimization",
+      "Analytics integration",
+      "Social media integration",
+      "3 months support",
+      "Performance optimization"
+    ],
+    cta: "Choose Professional",
+    href: "mailto:hello@example.com",
+    highlighted: true
+  }
+];
+
 export function PricingSection() {
   return (
     <section id="pricing" className="pt-12 sm:pt-24 pb-12 sm:pb-20">
