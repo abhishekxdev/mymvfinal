@@ -9,7 +9,7 @@ body {
 /* Desktop background */
 @media (min-width: 768px) {
   body {
-    background-image: url('/bgbg.png');
+    background-image: url('/bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body {
 /* Mobile background - without fixed attachment */
 @media (max-width: 767px) {
   body {
-    background-image: url('/bgbg.png');
+    background-image: url('/bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
