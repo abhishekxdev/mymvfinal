@@ -16,7 +16,7 @@ export function Footer({ showViewWork = true }: FooterProps) {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Lets Make It Happen.</span>
           </h2>
           
-          <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-6 w-full max-w-sm sm:max-w-none">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 w-full max-w-sm sm:max-w-none">
             <Link href="https://cal.com/mvpstudio.in/30min" passHref>
               <Button 
                 size="lg" 

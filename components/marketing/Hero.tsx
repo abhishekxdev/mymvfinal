@@ -47,7 +47,7 @@ export default function Hero() {
             We Build MVPs that launch<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Fast</span> and <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Scale</span> Faster
           </h1>
-          <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-4 w-full max-w-sm sm:max-w-none">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 w-full max-w-sm sm:max-w-none">
             <a
               href="https://cal.com/mvpstudio.in/30min"
               target="_blank"
