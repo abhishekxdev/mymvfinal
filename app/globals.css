@@ -9,7 +9,7 @@ body {
 /* Mobile background - must come first */
 @media (max-width: 767px) {
   html {
-    background-image: url('/mobi.jpeg') !important;
+    background-image: url('/mobi1.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -19,7 +19,7 @@ body {
   }
   
   body {
-    background-image: url('/mobi.jpeg') !important;
+    background-image: url('/mobi1.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
