@@ -47,22 +47,22 @@ export default function Hero() {
             We Build MVPs that launch<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Fast</span> and <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Scale</span> Faster
           </h1>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 w-full max-w-sm sm:max-w-none">
+          <div className="flex flex-row items-center justify-center gap-3 md:gap-4">
             <a
               href="https://cal.com/mvpstudio.in/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-6 py-3 rounded-full border border-white/10 bg-white text-black backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:bg-white/90 active:scale-[0.98] inline-flex items-center justify-center"
+              className="px-4 py-2 rounded-full border border-white/10 bg-white text-black backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:bg-white/90 active:scale-[0.98] inline-flex items-center justify-center"
             >
-              <span className="text-center font-helvetica font-normal text-sm md:text-base lg:text-lg tracking-[-0.02em]">
+              <span className="text-center font-helvetica font-normal text-sm tracking-[-0.02em]">
                 Book a Call
               </span>
             </a>
             <a
               href="/work"
-              className="w-full sm:w-auto px-6 py-3 rounded-full border border-white/10 bg-black/40 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:bg-black/60 active:scale-[0.98] inline-flex items-center justify-center"
+              className="px-4 py-2 rounded-full border border-white/10 bg-black/40 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:bg-black/60 active:scale-[0.98] inline-flex items-center justify-center"
             >
-              <span className="text-center font-helvetica font-normal text-sm md:text-base lg:text-lg tracking-[-0.02em] text-white">
+              <span className="text-center font-helvetica font-normal text-sm tracking-[-0.02em] text-white">
                 View Work
               </span>
               <ArrowRight className="w-4 h-4 ml-2 text-white" />
