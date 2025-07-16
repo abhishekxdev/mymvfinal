@@ -28,17 +28,17 @@ const testimonials = [
   {
     id: 5,
     role: 'HubSpot CRM',
-    quote: 'Integrating HubSpot CRM into our workflow changed how we operate. The visibility into our sales pipeline and the automation tools helped us close deals 30% faster. It's like having a growth engine on autopilot.'
+    quote: 'Integrating HubSpot CRM into our workflow changed how we operate. The visibility into our sales pipeline and the automation tools helped us close deals 30% faster. It\'s like having a growth engine on autopilot.'
   },
   {
     id: 6,
     role: 'InvoiceAI',
-    quote: 'Before InvoiceAI, invoicing was a mess. Now it's fully automated and error-free. We reclaimed hours every week and got paid faster — it's the backend we didn't know we needed.'
+    quote: 'Before InvoiceAI, invoicing was a mess. Now it\'s fully automated and error-free. We reclaimed hours every week and got paid faster — it's the backend we didn\'t know we needed.'
   },
   {
     id: 7,
     role: 'ColdReach AI',
-    quote: 'ColdReach AI helped us scale our outreach like never before. Smart targeting and AI-written emails led to an 8x jump in replies. It's like adding a growth hacker to your team overnight.'
+    quote: 'ColdReach AI helped us scale our outreach like never before. Smart targeting and AI-written emails led to an 8x jump in replies. It\'s like adding a growth hacker to your team overnight.'
   },
   {
     id: 8,
