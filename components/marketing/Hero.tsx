@@ -34,16 +34,16 @@ export default function Hero() {
   const currentProject = projects[currentProjectIndex];
 
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-start relative overflow-hidden px-4 pt-20 md:pt-32">
+    <div className="min-h-[80vh] w-full flex flex-col items-center justify-start relative overflow-hidden px-4 pt-20 md:pt-32 pb-8 md:pb-12">
       {/* Subtle dark overlay for text readability - but not too dark */}
       <div className="absolute inset-0 bg-black/20 md:bg-black/30 z-10"></div>
       {/* Main Content - Above overlay */}
       <div className="max-w-6xl mx-auto z-20 w-full mt-8 md:mt-16 relative">
         <div className="flex flex-col items-center justify-center gap-6 md:gap-12 text-center motion-translate-y-in-100 motion-duration-[1s] motion-ease-spring-smooth">
-          <span className="inline-block mb-2 md:mb-4 px-3 md:px-4 py-1 rounded-full bg-black/20 backdrop-blur-sm text-xs font-normal font-helvetica text-white tracking-wide border border-white/20 uppercase">
+          <span className="inline-block mb-2 md:mb-4 px-1.5 md:px-4 py-0.5 md:py-1 rounded-full bg-black/20 backdrop-blur-sm text-[10px] md:text-xs font-normal font-helvetica text-white tracking-wide border border-white/20 uppercase">
             15+ Projects Delivered
           </span>
-          <h1 className="text-white text-2xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl tracking-tight font-sans leading-tight drop-shadow-lg px-2">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl tracking-tight font-sans leading-tight drop-shadow-lg px-2">
             We Build MVPs that launch<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Fast</span> and <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Scale</span> Faster
           </h1>
