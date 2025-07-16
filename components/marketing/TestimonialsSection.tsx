@@ -12,6 +12,8 @@ export function TestimonialsSection() {
   }
   
   return (
+  )
+}
 -    <section className="w-full pt-20 md:pt-24 pb-20 md:pb-24 relative">
 +    <section className="w-full pt-12 md:pt-24 pb-12 md:pb-24 relative">
 -      <div className="max-w-4xl mx-auto px-4 md:px-8">
