@@ -11,21 +11,44 @@ body {
   html {
     background-image: url('/mobi1.jpg') !important;
     background-size: cover !important;
-    background-position: center !important;
+    background-position: center center !important;
     background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
+    background-attachment: fixed !important;
     min-height: 100vh;
     background-color: #000;
+    width: 100%;
+    height: 100%;
   }
   
   body {
     background-image: url('/mobi1.jpg') !important;
     background-size: cover !important;
-    background-position: center !important;
+    background-position: center center !important;
     background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
+    background-attachment: fixed !important;
     min-height: 100vh;
     background-color: #000;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Handle mobile browser address bar issues */
+  @supports (-webkit-touch-callout: none) {
+    html, body {
+      min-height: -webkit-fill-available;
+    }
+  }
+
+  /* Ensure background covers entire document */
+  #__next {
+    background-image: url('/mobi1.jpg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    min-height: 100vh;
   }
 }
 
