@@ -34,35 +34,35 @@ export default function Hero() {
   const currentProject = projects[currentProjectIndex];
 
   return (
-    <div className="min-h-[90vh] w-screen flex flex-col items-center justify-center relative overflow-hidden">
+    <div className="min-h-screen w-full flex flex-col items-center justify-start relative overflow-hidden px-4 pt-20 md:pt-32">
       {/* Subtle dark overlay for text readability - but not too dark */}
       <div className="absolute inset-0 bg-black/30 z-10"></div>
       {/* Main Content - Above overlay */}
-      <div className="max-w-6xl mx-auto z-20 px-4 md:px-8 mt-48 md:mt-72 relative">
-        <div className="flex flex-col items-center justify-center gap-12 text-center motion-translate-y-in-100 motion-duration-[1s] motion-ease-spring-smooth">
-          <span className="inline-block mb-4 px-4 py-1 rounded-full bg-black/20 backdrop-blur-sm text-xs md:text-sm font-normal font-helvetica text-white tracking-wide border border-white/20 uppercase">
+      <div className="max-w-6xl mx-auto z-20 w-full mt-8 md:mt-16 relative">
+        <div className="flex flex-col items-center justify-center gap-6 md:gap-12 text-center motion-translate-y-in-100 motion-duration-[1s] motion-ease-spring-smooth">
+          <span className="inline-block mb-2 md:mb-4 px-3 md:px-4 py-1 rounded-full bg-black/20 backdrop-blur-sm text-xs font-normal font-helvetica text-white tracking-wide border border-white/20 uppercase">
             15+ Projects Delivered
           </span>
-          <h1 className="text-white text-3xl sm:text-4xl md:text-7xl lg:text-8xl tracking-tight font-sans leading-tight drop-shadow-lg">
+          <h1 className="text-white text-2xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl tracking-tight font-sans leading-tight drop-shadow-lg px-2">
             We Build MVPs that launch<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Fast</span> and <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Scale</span> Faster
           </h1>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-4 w-full max-w-sm sm:max-w-none">
             <a
               href="https://cal.com/mvpstudio.in/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-full border border-white/10 bg-white text-black backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:bg-white/90 active:scale-[0.98] inline-flex items-center"
+              className="w-full sm:w-auto px-6 py-3 rounded-full border border-white/10 bg-white text-black backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:bg-white/90 active:scale-[0.98] inline-flex items-center justify-center"
             >
-              <span className="text-center font-helvetica font-normal text-base md:text-lg tracking-[-0.02em]">
+              <span className="text-center font-helvetica font-normal text-sm md:text-base lg:text-lg tracking-[-0.02em]">
                 Book a Call
               </span>
             </a>
             <a
               href="/work"
-              className="px-6 py-3 rounded-full border border-white/10 bg-black/40 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:bg-black/60 active:scale-[0.98] inline-flex items-center"
+              className="w-full sm:w-auto px-6 py-3 rounded-full border border-white/10 bg-black/40 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:bg-black/60 active:scale-[0.98] inline-flex items-center justify-center"
             >
-              <span className="text-center font-helvetica font-normal text-base md:text-lg tracking-[-0.02em] text-white">
+              <span className="text-center font-helvetica font-normal text-sm md:text-base lg:text-lg tracking-[-0.02em] text-white">
                 View Work
               </span>
               <ArrowRight className="w-4 h-4 ml-2 text-white" />
@@ -70,7 +70,7 @@ export default function Hero() {
           </div>
         </div>
         {/* Projects Section */}
-        <div className="mt-16">
+        <div className="mt-8 md:mt-16">
           {/* Desktop view (md and above) */}
           <div className="hidden md:block">
             {currentProject && <ProjectCard project={currentProject} />}

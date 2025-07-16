@@ -28,12 +28,12 @@ export function WhyUsSection() {
   ];
 
   return (
-    <section className="w-full py-12 md:py-16 relative mt-12 md:mt-20" id="why-us">
+    <section className="w-full py-8 md:py-16 relative mt-8 md:mt-20" id="why-us">
       <div className="max-w-4xl mx-auto z-10 px-4 md:px-8">
-        <div className="flex flex-col items-center gap-4 mb-12">
+        <div className="flex flex-col items-center gap-3 md:gap-4 mb-8 md:mb-12">
           <div className="flex flex-col items-center gap-2 text-center w-full">
             <p className="text-sm uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 font-helvetica font-normal">WHY MVP STUDIO</p>
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-helvetica font-normal tracking-tight text-center text-white">
+            <h2 className="text-xl md:text-4xl lg:text-5xl font-helvetica font-normal tracking-tight text-center text-white px-2">
             High-Impact MVPs for Founders Who Move Fast
             </h2>
           </div>

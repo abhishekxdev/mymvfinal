@@ -40,28 +40,28 @@ const faqs = [
 
 export function FaqSection() {
   return (
-    <section className="w-full py-20 md:py-24 px-4 md:px-8 relative" id="faq">
+    <section className="w-full py-12 md:py-24 px-4 md:px-8 relative" id="faq">
       <div className="relative z-10">
         <div className="flex flex-col items-center">
-          <div className="flex flex-col items-center space-y-4">
+          <div className="flex flex-col items-center space-y-3 md:space-y-4">
             <p className="text-sm uppercase tracking-wider text-white/80 font-helvetica font-normal">FAQs</p>
-            <h2 className="text-3xl md:text-4xl font-helvetica font-normal tracking-tight text-left text-white">
+            <h2 className="text-xl md:text-4xl font-helvetica font-normal tracking-tight text-center text-white px-2">
               Have Questions? We Have Answers
             </h2>
           </div>
           
-          <div className="w-full mt-16 max-w-2xl mx-auto">
+          <div className="w-full mt-8 md:mt-16 max-w-2xl mx-auto">
             <Accordion type="single" collapsible className="space-y-3 md:space-y-4">
               {faqs.map((faq, index) => (
                 <AccordionItem 
                   key={index} 
                   value={`item-${index}`}
-                  className="border border-white/20 rounded-lg px-3 py-3 md:px-6 md:py-4 hover:bg-white/5 transition-all duration-300 backdrop-blur-sm"
+                  className="border border-white/20 rounded-lg px-4 py-2 md:px-6 md:py-4 hover:bg-white/5 transition-all duration-300 backdrop-blur-sm"
                 >
-                  <AccordionTrigger className="text-left font-helvetica font-normal hover:text-white hover:no-underline text-white text-base md:text-lg">
+                  <AccordionTrigger className="text-left font-helvetica font-normal hover:text-white hover:no-underline text-white text-sm md:text-lg">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/80 font-helvetica pt-2 pb-2 md:pb-4 text-left text-sm md:text-base">
+                  <AccordionContent className="text-white/80 font-helvetica pt-2 pb-2 md:pb-4 text-left text-xs md:text-base">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

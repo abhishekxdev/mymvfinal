@@ -5,17 +5,17 @@ import { Badge } from '@/components/ui/badge'
 
 export function ServicesSection() {
   return (
-    <section className="w-full py-20 md:py-24 px-4 md:px-8 relative" id="services">
+    <section className="w-full py-12 md:py-24 px-4 md:px-8 relative" id="services">
       <div className="relative z-10">
         <div className="flex flex-col items-center">
           <div className="flex flex-col items-center space-y-4 text-center w-full">
             <p className="text-sm uppercase tracking-wider text-white/80 font-helvetica font-normal">SERVICES</p>
-            <h2 className="text-3xl md:text-4xl font-helvetica font-normal tracking-tight text-white">
+            <h2 className="text-xl md:text-4xl font-helvetica font-normal tracking-tight text-white px-2">
               Experts in Websites, Product, & Branding
             </h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-16 w-full max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-8 md:mt-16 w-full max-w-4xl mx-auto">
             <ServiceCard 
               icon={<Layout className="h-8 w-8 text-white" />}
               title="MVP Development"
